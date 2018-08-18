@@ -1,0 +1,10 @@
+insert into localidade(id, cep, logradouro) values(1, '79200-000', 'Aquidauana-MS');
+insert into localidade(id, cep, logradouro) values(2, '79380-000', 'Miranda-MS');
+insert into localidade(id, cep, logradouro) values(3, '79210-000', 'Anastácio-MS');
+insert into localidade(id, cep, logradouro) values(4, '79230-000', 'Guia Lopes da Laguna-MS');
+insert into localidade(id, cep, logradouro) values(5, '79240-000', 'Jardim-MS'); 
+insert into localidade(id, cep, logradouro) values(6, '79290-000', 'Bonito-MS');
+insert into localidade(id, cep, logradouro) values(7, '79215-000', 'Dois Irmãos do Buriti-MS');
+insert into localidade(id, cep, logradouro) values(8, '79190-000', 'Terenos-MS');
+insert into localidade(id, cep, logradouro) values(9, '79170-000', 'Sidrolândia-MS');
+insert into localidade(id, cep, logradouro) values(10, '79794-000', 'Deodápolis-MS');   

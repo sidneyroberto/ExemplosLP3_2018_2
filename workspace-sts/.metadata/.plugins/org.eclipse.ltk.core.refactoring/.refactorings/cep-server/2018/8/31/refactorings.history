@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Localidade.java&apos; to &apos;cep-server/src/main/java/br.edu.ifms.lp3.model&apos;&#x0A;- Original project: &apos;cep-server&apos;&#x0A;- Destination element: &apos;cep-server/src/main/java/br.edu.ifms.lp3.model&apos;&#x0A;- Original element: &apos;br.edu.ifms.lp3.Localidade.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java&lt;br.edu.ifms.lp3.model" element1="/src\/main\/java&lt;br.edu.ifms.lp3{Localidade.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1533345908742" units="1" version="1.0"/>
+</session>
