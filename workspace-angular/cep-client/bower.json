@@ -1,0 +1,19 @@
+{
+  "name": "cep-client",
+  "homepage": "https://github.com/sidneyroberto/ExemplosLP3_2018_2",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.7.3",
+    "bootstrap": "^4.1.3"
+  }
+}
