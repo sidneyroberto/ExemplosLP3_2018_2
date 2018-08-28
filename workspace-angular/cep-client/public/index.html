@@ -11,17 +11,14 @@
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <input type="text" placeholder="Digite o cep" ng-model="cepInformado">
-            </div>
-            <div class="col-md-3"></div>
-        </div>
+        <div ng-view></div>
     </div>
 
 
     <script src="vendors/angular/angular.min.js"></script>
+    <script src="vendors/angular-route/angular-route.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/controllers/localidade_controller.js"></script>
 </body>
 
 </html>
