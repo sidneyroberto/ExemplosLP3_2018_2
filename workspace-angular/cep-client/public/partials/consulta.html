@@ -9,15 +9,17 @@
 <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-6 text-center">
-        <input type="text" class="form-control" placeholder="Digite sua pesquisa" ng-model="filtro">
+        <input type="text" class="form-control" placeholder="Digite sua pesquisa" ng-model="filtro" ng-change="consultar()">
         <div class="form-check-inline">
             <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="opcao" value="cep" ng-model="opcao">Por CEP
+                <input type="radio" class="form-check-input" name="opcao" value="cep" ng-model="opcao" ng-click="limparResultados()">Por
+                CEP
             </label>
         </div>
         <div class="form-check-inline">
             <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="opcao" value="localidade" ng-model="opcao">Por localidade
+                <input type="radio" class="form-check-input" name="opcao" value="localidade" ng-model="opcao" ng-click="limparResultados()">Por
+                localidade
             </label>
         </div>
     </div>
@@ -36,6 +38,13 @@
                     <th>LOGRADOURO</th>
                 </tr>
             </thead>
+            <tbody>
+                <!-- Cria um loop para iterar sobre as localidades -->
+                <tr ng-repeat="l in localidades">
+                    <td>{{ l.cep }}</td>
+                    <td>{{ l.logradouro }}</td>
+                </tr>
+            </tbody>
         </table>
     </div>
     <div class="col-md-3"></div>
