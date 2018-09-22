@@ -116,6 +116,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/sidneysousa/GoogleDrive/IFMS/2018/SegundoSemestre/LP3/ExemplosLP3_2018_2/workspace-sts"/>
 			<item value="/Users/sidneysousa/Google Drive/IFMS/2018/SegundoSemestre/LP3/workspace-sts"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
