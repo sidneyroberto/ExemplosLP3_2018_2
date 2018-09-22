@@ -1,0 +1,28 @@
+{
+  "name": "blog-admin",
+  "homepage": "https://github.com/sidneyroberto/ExemplosLP3_2018_2",
+  "description": "Módulo administrativo do blog",
+  "main": "",
+  "keywords": [
+    "blog",
+    "metal"
+  ],
+  "authors": [
+    "Sidney Sousa"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.7.4",
+    "angular-route": "^1.7.4",
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1"
+  }
+}
