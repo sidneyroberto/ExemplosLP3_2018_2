@@ -2,6 +2,7 @@ package br.edu.ifms.lp3.model;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -26,6 +27,7 @@ public class Post {
 	private Date dataPostagem;
 	
 	@NotEmpty
+	@Column(columnDefinition = "TEXT")
 	private String conteudo;
 	
 	@NotEmpty

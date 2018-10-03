@@ -32,6 +32,12 @@ public class PostService {
 		return repo.findByOrderByDataPostagemDesc();
 	}
 	
+	@GetMapping("{id}")
+	public Post recuperarPorId(@PathVariable("id") Long id) {
+		Optional<Post> obj = repo.findById(id);
+		return obj.get();
+	}
+	
 	@PostMapping
 	public Post salvar(@RequestBody @Valid Post post) {
 		return repo.save(post);
@@ -54,7 +60,7 @@ public class PostService {
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@DeleteMapping("/{id}")
-	public ResponseEntity remove(@PathVariable("id") Long id) {
+	public ResponseEntity remover(@PathVariable("id") Long id) {
 		Optional<Post> post = repo.findById(id);
 		if (!post.isPresent()) {
 			return new ResponseEntity("Post não encontrado", HttpStatus.NOT_FOUND);

@@ -1,1 +1,43 @@
-Cadastro
+<div class="row">
+    <div class="col">
+        <h3>{{ titulo }}</h3>
+    </div>
+</div>
+
+<br>
+
+<div id="mensagem" ng-show="sucesso || erro" class="row">
+    <div class="col">
+        <span ng-show="sucesso" class="alert alert-success">
+            Post salvo
+        </span>
+        <span ng-show="erro" class="alert alert-danger">
+            Erro ao tentar salvar o post
+        </span>
+    </div>
+</div>
+
+
+<br>
+
+<div class="row">
+    <div class="col">
+        <form ng-submit="postar()">
+            <div class="form-group">
+                <label>Titulo</label>
+                <input type="text" class="form-control" ng-model="post.titulo" required>
+            </div>
+            <div class="form-group">
+                <label>Conteúdo</label>
+                <textarea rows="10" class="form-control" ng-model="post.conteudo" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Tags</label>
+                <input type="text" class="form-control" ng-model="post.tags" required>
+            </div>
+            <input ng-disabled="enviando" type="submit" class="btn btn-primary" value="Postar">
+        </form>
+    </div>
+</div>
+
+<br>
