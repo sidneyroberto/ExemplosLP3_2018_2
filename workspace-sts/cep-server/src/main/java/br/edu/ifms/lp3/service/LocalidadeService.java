@@ -3,6 +3,8 @@ package br.edu.ifms.lp3.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +25,15 @@ public class LocalidadeService {
 		return repo.findByCep(cepInformado);
 	}
 	
+	/**
+	 * Exemplo com paginação
+	 * @param pagina
+	 * @return
+	 */
+	@GetMapping
+	public Page<Localidade> recuperaTodos(Pageable pagina) {
+		return repo.findAllByOrderByLogradouroDesc(pagina);
+	}
 	@GetMapping("/logradouro/{logradouroInformado}")
 	public List<Localidade> 	recuperaLocalidadesPeloLogradouro(
 			@PathVariable("logradouroInformado") 
