@@ -3,7 +3,7 @@ import cookieParser from 'cookie-parser';
 import Debug from 'debug';
 import express from 'express';
 import logger from 'morgan';
-
+import './models/db';
 import index from './routes/index';
 
 const app = express();

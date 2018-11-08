@@ -1,31 +1,19 @@
 import express from 'express';
+import TarefaController from '../controllers/TarefaController';
 
 const router = express.Router();
+let tarefaCtrl = new TarefaController();
 
-/* GET index page. */
-router.get('/', (req, res) => {
-  res.json('Oi!');
-});
+// Serviço para listar os graus de severidade
+router.get('/tarefas/severidades', tarefaCtrl.listarSeveridades);
 
-// Serviço para teste do deploy
-router.get('/tarefas', (req, res) => {
-  res.json([
-    {
-      descricao: 'Testar web service',
-      severidade: 'alta',
-      deadline: new Date()
-    },
-    {
-      descricao: 'Implementar interface com o usuário',
-      severidade: 'média',
-      deadline: new Date()
-    },
-    {
-      descricao: 'Fazer o deploy da aplicação',
-      severidade: 'baixa',
-      deadline: new Date()
-    }
-  ]);
-});
+// Serviço para cadastrar uma nova tarefa
+router.post('/tarefas', tarefaCtrl.salvar);
+
+// Serviço para atualizar uma tarefa
+router.put('/tarefas', tarefaCtrl.atualizar);
+
+// Serviço para listar as tarefas cadastradas
+router.get('/tarefas', tarefaCtrl.listarTarefas);
 
 export default router;

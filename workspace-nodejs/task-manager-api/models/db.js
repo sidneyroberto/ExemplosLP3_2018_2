@@ -1,5 +1,7 @@
 // Arquivo de configuração do banco de dados
 import mongoose from 'mongoose';
+import './tarefa';
+
 
 var dbURI = 'mongodb://localhost/taskmanager-dev';
 mongoose.Promise = global.Promise;
